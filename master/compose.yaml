@@ -19,7 +19,7 @@ services:
     volumes:
       - ./grafana:/var/lib/grafana:rw
     environment:
-      TZ: Europe/London
+      TZ: America/Los_Angeles
       GF_INSTALL_PLUGINS: grafana-clock-panel,grafana-simple-json-datasource,natel-discrete-panel,grafana-piechart-panel
     restart: unless-stopped
 
